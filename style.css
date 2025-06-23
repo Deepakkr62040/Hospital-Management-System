@@ -12,7 +12,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #d48f8f, #90e342);
+    /* background: linear-gradient(135deg, #d48f8f, #90e342); */
+    background: #081b29;
 }
 
 .wrapper {
@@ -22,7 +23,7 @@ body {
     background: transparent;
     border: 2px solid #0ef;
     box-shadow: 0 0 25px #0ef;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .wrapper .form-box {
     position: absolute;
@@ -37,7 +38,6 @@ body {
 .wrapper .form-box.login {
     left: 0;
     padding: 0 60px 0 40px;
-    display: none;
 }
 
 .wrapper .form-box.login .animation {
@@ -45,6 +45,7 @@ body {
     opacity: 1;
     filter: blur(0);
     transition: 0.7s ease;
+    transition-delay: calc(0.1s * var(--j));
 }
 
 .wrapper.active .form-box.login .animation {
@@ -57,7 +58,26 @@ body {
 .wrapper .form-box.register {
     right: 0;
     padding: 0 40px 0 60px;
-    display: none;
+    pointer-events: none;
+}
+
+.wrapper.active .form-box.register {
+    pointer-events: auto;
+}
+
+.wrapper .form-box.register .animation {
+    transform: translateX(120%);
+    opacity: 0;
+    filter: blur(10px);
+    transition: 0.7s ease;
+    transition-delay: calc(0.1s * var(--j));
+}
+
+.wrapper.active .form-box.register .animation {
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+    transition-delay: calc(0.1s * var(--i));
 }
 
 .form-box h2 {
@@ -171,7 +191,7 @@ body {
 
 .logreg-link p a:hover {
     text-transform: underline;
-    color: rgb(3, 4, 4);
+    color: rgb(47, 10, 232);
 }
 
 .wrapper .info-text {
@@ -188,7 +208,6 @@ body {
     right: 0;
     text-align: right;
     padding: 0 40px 60px 150px;
-    display: none;
 }
 
 .wrapper .info-text.login .animation {
@@ -196,6 +215,7 @@ body {
     opacity: 1;
     filter: blur(0);
     transition: 0.7s ease;
+    transition-delay: calc(0.1s * var(--j));
 }
 
 .wrapper.active .info-text.login .animation {
@@ -209,7 +229,26 @@ body {
     left: 0;
     text-align: left;
     padding: 0 150px 60px 40px;
-    display: none;
+    pointer-events: none;
+}
+
+.wrapper.active .info-text.register {
+    pointer-events: auto;
+}
+
+.wrapper .info-text.register .animation {
+    transform: translateX(-120%);
+    opacity: 0;
+    filter: blur(10px);
+    transition: 0.7s ease;
+    transition-delay: calc(0.1s * var(--j));
+}
+
+.wrapper.active .info-text.register .animation {
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+    transition-delay: calc(0.1s * var(--i));
 }
 
 .info-text h2 {
@@ -231,17 +270,18 @@ body {
     width: 850px;
     height: 600px;
     background: linear-gradient(45deg, #081b29, #0ef);
-    border-bottom: 3px solid rgb(235, 92, 175);
-    /* transform: rotate(10deg) skewY(40deg); */
-    transform: rotate(0) skewY(0);
+    border-bottom: 3px solid #0ef;
+    transform: rotate(10deg) skewY(40deg);
+    /* transform: rotate(0) skewY(0); */
     transform-origin: bottom right;
     transition: 1.5s ease;
+    transition-delay: 1.6s;
 }
 
-/* .wrapper .bg-animate {
-    transform: rotate(10deg) skewY(40deg);
+.wrapper.active .bg-animate {
+    transform: rotate(0) skewY(0);
     transition-delay: 0.5s;
-} */
+}
 
 .wrapper .bg-animate2 {
     position: absolute;
@@ -251,12 +291,13 @@ body {
     height: 700px;
     background: #081b29;
     border-top: 3px solid #0ef;
-    transform: rotate(-11deg) skewY(41deg);
+    transform: rotate(0) skewY(0);
     transform-origin: bottom left;
     transition: 1.5s ease;
+    transition-delay: 0.5s;
 }
 
-/* .wrapper.active .bg-animate2 {
+.wrapper.active .bg-animate2 {
     transform: rotate(-11deg) skewY(-41deg);
     transition-delay: 1.2s;
-} */
+}
