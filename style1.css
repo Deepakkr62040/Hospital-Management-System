@@ -156,7 +156,104 @@
     font-weight: 600;
 }
 
-
-
 /* end login-sign page */
 
+
+
+
+/* Index page  */
+
+.index-body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(164, 234, 234), rgb(235, 145, 160));
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.index-container {
+    position: relative;
+    left: 11rem;
+    box-shadow: 0 4px 12px rgba(14, 14, 14, 0.1);
+    width: 70rem;
+    height: 45rem;
+    justify-content: center;
+}
+
+.index-header {
+    width: 100%;
+    height: 70%;
+    position: relative;
+    background: url(./Images/index-bg.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.index-main {
+    width: 100%;
+    height: 20%;
+    display: inline-flex;
+    position: relative;
+    background: rgb(51, 219, 112);
+}
+
+.index-main-leave {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #b41d1d;
+}
+
+.index-main-cerfificate {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1d25b4;
+}
+
+.index-main-award {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #7ddb0a;
+}
+
+.index-main-vote {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #b73fdc;
+}
+
+.index-main-login {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #737e7c;
+}
+
+.index-footer {
+    width: 100%;
+    height: 10%;
+    /* display: none; */
+    position: relative;
+    background: rgb(120, 120, 228);
+    color: #fff;
+    padding: 0.5rem;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* end index page */
