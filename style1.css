@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* login-sign page */
+
+.login-sign-body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(164, 234, 234), rgb(235, 145, 160));
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    top: 5rem;
+    left: 21rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(14, 14, 14, 0.1);
+    width: 53.13rem;
+    height: 34.38rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./Images/login-sign-bg.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+.container h1 {
+    color: #fff;
+    font: 1em sans-serif;
+    border-radius: 0.5rem;
+}
+
+.header {
+    position: absolute;
+    top: 1.4rem;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    /* margin-bottom: 1.0rem; */
+    border: #ffffffb4 2px solid;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background: rgb(120, 120, 228);
+}
+
+.admin-sec {
+    width: 12.5rem;
+    height: 6.25rem;
+    background: rgba(109, 84, 223, 0.8);
+    border-radius: 0.625rem;
+    box-shadow: 5px 5px 10px rgb(6, 6, 6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 6rem;
+    right: 5.5rem;
+    
+}
+
+.admin-sec a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.admin-sec-i {
+    font-size: 2rem;
+    color: #000000;
+    margin: 0.625rem 0 0.625rem 0;
+}
+
+.admin-sec:hover {
+    background: rgba(47, 0, 255, 0.9);
+    transition: background 0.3s ease;
+    color: #b41d1d;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.doctor-sec {
+    width: 12.5rem;
+    height: 6.25rem;
+    background: rgba(109, 84, 223, 0.8);
+    border-radius: 0.625rem;
+    box-shadow: 5px 5px 10px rgb(6, 6, 6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 11.5rem;
+    
+}
+
+.doctor-sec a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.doctor-sec-i {
+    font-size: 2rem;
+    color: #000000;
+    margin: 0.625rem 0 0.625rem 0;
+}
+
+.doctor-sec:hover {
+    background: rgba(47, 0, 255, 0.9);
+    transition: background 0.3s ease;
+    color: #050505;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.patient-sec {
+    width: 12.5rem;
+    height: 6.25rem;
+    background: rgba(109, 84, 223, 0.8);
+    border-radius: 0.625rem;
+    box-shadow: 5px 5px 10px rgb(6, 6, 6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 6rem;
+    left: 5.5rem;
+    
+}
+
+.patient-sec a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.patient-sec-i {
+    font-size: 2rem;
+    color: #000000;
+    margin: 0.625rem 0 0.625rem 0;
+}
+
+.patient-sec:hover {
+    background: rgba(47, 0, 255, 0.9);
+    transition: background 0.3s ease;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+
+/* end login-sign page */
+
