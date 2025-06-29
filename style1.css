@@ -166,7 +166,8 @@
 .index-body {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to right, rgb(164, 234, 234), rgb(235, 145, 160));
+    /* background: linear-gradient(to right, rgb(164, 234, 234), rgb(235, 145, 160)); */
+    background: #fff8f8;
     color: #333;
     display: flex;
     flex-direction: column;
@@ -175,7 +176,7 @@
 
 .index-container {
     position: relative;
-    left: 11rem;
+    left: 12.5rem;
     box-shadow: 0 4px 12px rgba(14, 14, 14, 0.1);
     width: 70rem;
     height: 45rem;
@@ -195,7 +196,7 @@
     height: 20%;
     display: inline-flex;
     position: relative;
-    background: rgb(51, 219, 112);
+    /*   */
 }
 
 .index-main-leave {
@@ -207,13 +208,28 @@
     background: #b41d1d;
 }
 
-.index-main-cerfificate {
+.index-main-certificate {
     width: 20%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #1d25b4;
+    /* background: #1d25b4; */
+}
+
+.index-main-certificate-img {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-main-certificate-img-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(14, 14, 14, 0.1);
 }
 
 .index-main-award {
@@ -222,7 +238,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #7ddb0a;
+    /* background: #7ddb0a; */
+}
+
+.index-main-award-img {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-main-award-img-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(14, 14, 14, 0.1);
 }
 
 .index-main-vote {
@@ -231,29 +262,108 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #b73fdc;
+    /* background: #b73fdc; */
+}
+
+.index-main-vote-img {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-main-vote-img-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(14, 14, 14, 0.1);
 }
 
 .index-main-login {
     width: 20%;
     height: 100%;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    /* background: #737e7c; */
+}
+
+.btn {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(14, 14, 14, 0.1);
+    color: #111010;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #737e7c;
+    margin: 12px 26px;
+    background: #6198da;
+}
+
+.btn:hover {
+    background: #111010;
+    color: #f2ebeb;
+    transition: background 0.3s ease;
 }
 
 .index-footer {
     width: 100%;
     height: 10%;
-    /* display: none; */
+    display: inline-flex;
     position: relative;
-    background: rgb(120, 120, 228);
-    color: #fff;
-    padding: 0.5rem;
+    background: rgb(51, 219, 112);
+}
+
+.index-footer-title {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    position: relative;
+    justify-content: center;
+    align-items: center;
     font-family: 'Arial', sans-serif;
     font-size: 1rem;
     font-weight: bold;
+    padding: 0.5rem;
+}
+
+.index-footer-token {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-footer-token-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: #000000 1px solid;
+    box-shadow: 0 4px 12px rgba(14, 14, 14, 0.1);
+    color: #fff;
+    padding: 0.5rem;
+    background: #000000;
+}
+
+.index-footer-token-input {
+    width: 6rem;
+    height: 2.5rem;
+    box-shadow: 0 4px 12px rgba(14, 14, 14, 0.1);
+    color: #111010;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    background: none;
 }
 
 /* end index page */
